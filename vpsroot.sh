@@ -1,7 +1,7 @@
 #!/bin/bash
 # Mod By NevermoreSSH
 #echo "$crot    ALL=(ALL:ALL) ALL" >> /etc/sudoers;
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/NevermoreSSH/hop/main/sshd_config;
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/shwelu2024/auto-script/main/sshd_config;
 systemctl restart sshd;
 clear;
 echo -e "ใส่รหัสผ่าน:";
