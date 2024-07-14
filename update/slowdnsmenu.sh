@@ -14,20 +14,20 @@ echo -e "\033[0;36m#---------------------------------------------------#\033[m"
 echo -e "\033[0;36m#\033[m \033[0;31mSlowDNS | SANTAI\033[m \033[0;36m#\033[m"
 echo -e "\033[0;36m#===================================================#\033[m"
     echo ""
-    echo -e "\033[0;36m[01]\033[m | Install SlowDNS SSH"
-    echo -e "\033[0;36m[02]\033[m | Install SlowDNS SSL"
-    echo -e "\033[0;36m[03]\033[m | Install SlowDNS DROP"
-    echo -e "\033[0;36m[04]\033[m | Install SlowDNS SOCKS"
-    echo -e "\033[0;36m[05]\033[m | lihat informasi"
-    echo -e "\033[0;36m[06]\033[m | Mulai SlowDNS"
-    echo -e "\033[0;36m[07]\033[m | Mulai ulang SlowDNS"
-    echo -e "\033[0;36m[08]\033[m | hentikan SlowDNS"
-    echo -e "\033[0;36m[09]\033[m | Hapus SlowDNS"
-    echo -e "\033[0;36m[10]\033[m | Perbarui/Instal Ulang"
-    echo -e "\033[0;36m[11]\033[m | Hapus Script"
-    echo -e "\033[0;36m[00]\033[m | KELUAR"
+    echo -e "\033[0;36m[01]\033[m | ติดตั้ง SlowDNS SSH"
+    echo -e "\033[0;36m[02]\033[m | ติดตั้ง SlowDNS SSL"
+    echo -e "\033[0;36m[03]\033[m | ติดตั้ง SlowDNS DROP"
+    echo -e "\033[0;36m[04]\033[m | ติดตั้งถุงเท้า SlowDNS"
+    echo -e "\033[0;36m[05]\033[m | ดูข้อมูล"
+    echo -e "\033[0;36m[06]\033[m | เริ่ม SlowDNS"
+    echo -e "\033[0;36m[07]\033[m | รีสตาร์ท SlowDNS"
+    echo -e "\033[0;36m[08]\033[m | หยุด SlowDNS"
+    echo -e "\033[0;36m[09]\033[m | ลบ SlowDNS"
+    echo -e "\033[0;36m[10]\033[m | อัปเดต/ติดตั้งใหม่"
+    echo -e "\033[0;36m[11]\033[m | ลบสคริปต์"
+    echo -e "\033[0;36m[00]\033[m | ออกไป"
     echo ""
-    echo -ne "\033[0;36mO apa yang ingin kamu lakukan?:\0033[m " && read opcao
+    echo -ne "\033[0;36mคุณอยากจะทำอะไร?:\0033[m " && read opcao
     case $opcao in
     1) Opcao1 ;;
     2) Opcao2 ;;
@@ -102,7 +102,7 @@ Opcao10 () {
 Opcao11 () {
      clear
     bash /etc/slowdns/remove-slow
-    echo -e "\033[0;31mPengelola SlowDNS Dicopot!\033[0m"
+    echo -e "\033[0;31mถอนการติดตั้ง SlowDNS แล้ว!\033[0m"
     sleep 2
     rm /bin/slowdns
 }
